@@ -1,0 +1,58 @@
+// --------------------------------------------------
+// vars
+@import 'base/variables';
+// --------------------------------------------------
+// bootstrap
+@import '../../vendor/scss/bootstrap/bootstrap-reboot';
+@import '../../vendor/scss/bootstrap/bootstrap-grid';
+// slick
+@import '../../vendor/scss/slick/slick';
+@import '../../vendor/scss/slick/slick-theme';
+//Venobox
+//@import '../../vendor/scss/magnific/main';
+// --------------------------------------------------
+// mixins
+@import 'mixins/fonts';
+@import 'mixins/helpers';
+
+// @import 'components/functions';
+// --------------------------------------------------
+// partials
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+@import 'partials/grid';
+@import 'partials/user';
+@import 'partials/forms';
+@import 'partials/table';
+@import 'partials/icons';
+@import 'partials/buttons';
+@import 'partials/collapse';
+@import 'partials/page_topbar';
+@import 'partials/list';
+@import 'partials/bg_content_block';
+// --------------------------------------------------
+
+// layout
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/nav';
+
+// views
+@import 'views/home';
+
+
+//Blocks
+//@import 'views/blocks/two_columns_information';
+ 
+
+//block post
+ 
+// responsive
+@import 'layout/responsive';
+@import 'layout/print';
+// --------------------------------------------------
+// components
+// @import your components here
+// --------------------------------------------------

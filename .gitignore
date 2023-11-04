@@ -1,0 +1,136 @@
+# You can keep your repository small and manageable with a .gitignore file.
+# Prevent build artifacts, large binary files, and other large file types
+# such as log files, media files, and executables from slowing down your workflow.
+#
+# If you need to keep large files in Bitbucket, consider introducing
+# Git Large File Storage (Git LFS) as part of your workflow.
+#
+# Learn more about .gitignore:
+#     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+# Learn more about Git LFS for large files:
+#     https://www.atlassian.com/git/tutorials/git-lfs
+
+# ignore everything in the root except the "wp-content" directory.
+/*
+!wp-content/
+!cron_tests/
+!db/
+!html/
+# ignore all files starting with .
+.*
+.scssc
+wp-content/themes/acgs/.sass-cache/
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!readme.md
+
+# ignore all files that start with ~
+~*
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.iso
+*.jar
+*.rar
+*.tar
+
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins" directory
+# "plugins" directory
+# "themes" directory
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/ai1wm-backups/
+!wp-content/plugins/
+!wp-content/themes/
+!wp-content/uploads/
+
+# log files
+wp-content/mu-plugins/**/*.log
+wp-content/ai1wm-backups/**/*.log
+wp-content/plugins/**/*.log
+wp-content/themes/**/*.log
+wp-content/uploads/**/*.log
+
+# .DS_STORE
+wp-content/mu-plugins/**/.DS_STORE
+wp-content/ai1wm-backups/**/.DS_STORE
+wp-content/plugins/**/.DS_STORE
+wp-content/themes/**/.DS_STORE
+wp-content/uploads/**/.DS_STORE
+
+# ignore these plugins from the core
+wp-content/plugins/hello.php
+wp-content/plugins/akismet/
+
+# ignore specific themes
+wp-content/themes/twenty*/
+
+# ignore node/grunt dependency directories
+node_modules/
+wp-content/plugins/all-in-one-wp-migration/storage/error\.log
+
+# large/disallowed file types
+# a CDN should be used for these
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
