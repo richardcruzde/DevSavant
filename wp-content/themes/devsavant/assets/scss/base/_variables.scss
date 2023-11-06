@@ -22,7 +22,7 @@ $font-heading: 'Playfair Display', Helvetica, Arial, sans-serif;
 // ----------------------------------------------------------------------
 // Variables
 // ----------------------------------------------------------------------
- 
+$grid-breakpoints: ( xs: 0, sm: 581px, md: 769px, lg: 1025px, xl: 1200px);
 
 $small-phone: 420px;
 $phone: 580px;
