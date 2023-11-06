@@ -178,16 +178,7 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
-function therapetic_search_text( $text ) {
-	return esc_attr( 'Search' );
-}
-add_filter( 'genesis_search_text', 'therapetic_search_text' );
 
-function therapetic_custom_menus() {
-	register_nav_menu('menu-1-footer',__( 'Footer Menu 1' ));
-	register_nav_menu('menu-2-footer',__( 'Footer Menu 2' ));
-}
-add_action( 'init', 'therapetic_custom_menus' );
 /* 
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 ); */

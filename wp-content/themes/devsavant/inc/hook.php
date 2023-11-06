@@ -22,7 +22,7 @@ function ther_custom_logo_url ( $ther_logo_html ) {
     $ther_custom_logo_id = get_theme_mod( 'custom_logo' );
     // Make sure to replace your updated site URL
     $ther_new_url = get_home_url();
-    $ther_logo_html = sprintf( '<a href="%1$s" alt="therapetic" title="therapetic" class="custom-logo-link" rel="home" itemprop="url">%2$s</a>',
+    $ther_logo_html = sprintf( '<a href="%1$s" alt="dev" title="dev" class="custom-logo-link" rel="home" itemprop="url">%2$s</a>',
         esc_url( $ther_new_url ),
         wp_get_attachment_image( $ther_custom_logo_id, 'full', false, array(
             'class'    => 'custom-logo',
