@@ -25,9 +25,19 @@
 
 // --------------------------------------------------
 // heading styles
-@mixin h1 {}
+@mixin h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.174em;
+    letter-spacing: -1px;
+}
 
-@mixin h2 {}
+@mixin h2 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.178571em;
+    letter-spacing: 0.25px;
+}
 
 @mixin h3 {}
 

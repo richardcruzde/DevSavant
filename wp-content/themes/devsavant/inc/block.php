@@ -43,3 +43,17 @@ function custom_block_category( $categories ) {
 }
 add_filter( 'block_categories', 'custom_block_category', 10, 2 );
  */
+
+
+
+ if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme Settings Footer',
+		'menu_title'	=> 'Theme Settings Footer',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+}

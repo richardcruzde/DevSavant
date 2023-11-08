@@ -1,0 +1,80 @@
+.site-header .menu-toggle {
+    display: none!important;
+}
+.genesis-skip-link {
+    display: none;
+}
+.site-header {
+    background: #222222;
+  /*  box-shadow: 0 10px 20px hsla(0,0%,85%,.35);
+    height: 80px;*/
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 106;
+    .title-area{
+        padding: 0;
+        img{
+            padding: 15px 0;
+            object-fit: contain;
+        }
+    }
+    .genesis-nav-menu {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0 -15px;
+        padding: 0;
+        a{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0px;
+            background-color: transparent;
+            text-decoration: none;
+            display: inline-block; 
+            padding: 20px 8px;
+            cursor: pointer;
+        }
+        >li{
+            >a{
+                padding: 35px 8px;
+            }
+        }
+        li{
+            padding: 0 15px;
+            &.current-menu-item{
+                a{
+                    background-color: #68AD79;
+                }
+            }
+            &:hover{
+                a{
+                    background-color: #68AD79;
+                }
+            }
+        }
+    }
+}
+ 
+
+.site-header>.wrap {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1216px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    &:after{
+        content: none;
+    }
+    &::before{
+        content: none;
+    }
+  }
+ 

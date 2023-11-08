@@ -26,17 +26,17 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
 //Theme functios
-/* require_once get_stylesheet_directory() . '/inc/config-theme.php';
+require_once get_stylesheet_directory() . '/inc/config-theme.php';
 require_once get_stylesheet_directory() . '/inc/import-scripts.php';
 require_once get_stylesheet_directory() . '/inc/shortcodes.php';
 require_once get_stylesheet_directory() . '/inc/post-types.php';
 require_once get_stylesheet_directory() . '/inc/block.php';
 require_once get_stylesheet_directory() . '/inc/hook.php';
- */
+ 
 
 // Layout
 //require_once get_stylesheet_directory() . '/template-parts/header.php';
-//require_once get_stylesheet_directory() . '/template-parts/footer.php';
+require_once get_stylesheet_directory() . '/template-parts/footer.php';
 
 
 

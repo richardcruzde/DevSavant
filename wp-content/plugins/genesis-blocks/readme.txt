@@ -2,10 +2,10 @@
 Contributors: dreamwhisper, johnstonphilip, marksabbath, mikeday, mindctrl, modernnerd, ryankienstra, studiopress, wpengine
 Donate link: https://studiopress.com
 Tags: Blocks, editor, gutenberg, gutenberg blocks, page builder, block enabled, page building, block, WP Engine
-Requires at least: 5.3
+Requires at least: 6.1
 Tested up to: 6.3
-Stable tag: 3.0.0
-Requires PHP: 7.1
+Stable tag: 3.0.1
+Requires PHP: 8.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,6 +103,9 @@ Yes, you will need to have WordPress 5.3 or later installed to take advantage of
 3. Some of the many blocks included in Genesis Blocks
 
 == Changelog ==
+
+= 3.0.1 =
+* Changed: Bump the minimum required PHP version to 8.1.
 
 = 3.0.0 =
 * Breaking change: Deprecate the Call To Action block in favor of Core blocks. This will automatically convert your Call To Action blocks to Core blocks when opening the block editor. The blocks should look mainly the same, but there could be some styling changes, especially if you have custom styling for classes other than 'gb-block-cta'.

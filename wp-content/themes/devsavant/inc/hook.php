@@ -38,4 +38,13 @@ function remove_nav_skiplink( $links ) {
 	unset( $links['genesis-nav-primary'] );
 }
 
+remove_action( 'genesis_site_title', 'genesis_seo_site_title' );
 
+//footer
+function dev_custom_menus() {
+	register_nav_menu('menu-1-footer',__( 'Footer Menu 1' ));
+	register_nav_menu('menu-2-footer',__( 'Footer Menu 2' ));
+	register_nav_menu('menu-3-footer',__( 'Footer Menu 3' ));
+	register_nav_menu('menu-4-footer',__( 'Footer Menu 4' ));
+}
+add_action( 'init', 'dev_custom_menus' );
