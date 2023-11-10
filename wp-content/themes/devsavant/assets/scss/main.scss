@@ -47,7 +47,9 @@
  
 
 //block post
- 
+@import 'views/blocks/hero';
+@import 'views/blocks/tabs_services';
+@import 'views/blocks/logo_list';
 // responsive
 @import 'layout/responsive';
 @import 'layout/print';

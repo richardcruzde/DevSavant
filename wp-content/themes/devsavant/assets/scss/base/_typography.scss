@@ -5,6 +5,9 @@
 h1,
 .h1 {
   @include h1;
+  strong{
+    font-weight: 700;
+  }
 }
 
 h2,

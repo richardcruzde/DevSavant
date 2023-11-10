@@ -20,7 +20,7 @@ function  vets_top_page() {
 
 
 remove_action('genesis_entry_content', 'genesis_do_post_image', 8);
-//remove_action( 'genesis_loop', 'genesis_do_loop' );
+//ffremove_action( 'genesis_loop', 'genesis_do_loop' );
 //add_action( 'genesis_loop', 'wps_category_do_loop_intro', 5 );
 
 

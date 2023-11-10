@@ -4,14 +4,14 @@ add_action('acf/init', 'ther_init_blocks');
 function ther_init_blocks() {
     // Check function exists.
     if( function_exists('acf_register_block_type') ) {
-/*         acf_register_block_type(array(
-            'name'              => 'dev/gallery',
-            'title'             => __('Block-Gallery'),
-            'description'       => __('Gallery.'),
-            'render_template'   => 'template-parts/blocks/gallery.php',
+        acf_register_block_type(array(
+            'name'              => 'dev/hero_block',
+            'title'             => __('Hero'),
+            'description'       => __('Hero.'),
+            'render_template'   => 'template-parts/blocks/hero.php',
             'category'          => 'dev-ca-2',
             'icon'              => 'format-aside',
-            'keywords'          => array( 'gallery', 'content' ),
+            'keywords'          => array( 'hero' ),
             'mode'            => 'preview',
             'render_callback' => 'template_acf_block_render_callback',
             'align'           => 'full',
@@ -20,8 +20,42 @@ function ther_init_blocks() {
                 'align'        => true,
             ),
         ));
- */
  
+        acf_register_block_type(array(
+            'name'              => 'dev/tabs_service',
+            'title'             => __('Tabs Services'),
+            'description'       => __('Tabs Services.'),
+            'render_template'   => 'template-parts/blocks/tabs_service.php',
+            'category'          => 'dev-ca-2',
+            'icon'              => 'format-aside',
+            'keywords'          => array( 'tabs', 'service' ),
+            'mode'            => 'preview',
+            'render_callback' => 'template_acf_block_render_callback',
+            'align'           => 'full',
+            'supports'        => array(
+                'align'        => array('full'),
+                'align'        => true,
+            ),
+        ));
+ 
+        acf_register_block_type(array(
+            'name'              => 'dev/logo_list',
+            'title'             => __('Logo list'),
+            'description'       => __('Logo List.'),
+            'render_template'   => 'template-parts/blocks/logo_list.php',
+            'category'          => 'dev-ca-2',
+            'icon'              => 'format-aside',
+            'keywords'          => array( 'Logo', 'list' ),
+            'mode'            => 'preview',
+            'render_callback' => 'template_acf_block_render_callback',
+            'align'           => 'full',
+            'supports'        => array(
+                'align'        => array('full'),
+                'align'        => true,
+            ),
+        ));
+
+        
     }
 }
 /* 

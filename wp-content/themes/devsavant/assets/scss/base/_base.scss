@@ -13,13 +13,16 @@ body {
     font-family: $font-family;
     margin: 0;
 
+    letter-spacing: 0.15000000596046448px;
+  //  color: $primary;
+}
+body:not(.wp-core-ui):not(.wp-core-ui ){
+    color: $primary;
     line-height: 1.4583em;
     font-size: 24px;
     font-weight: 500;
-    letter-spacing: 0.15000000596046448px;
-    text-align: center;
-
+    background-color: $black;
 }
 p{
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
