@@ -41,15 +41,12 @@
 // views
 @import 'views/home';
 
-
-//Blocks
-//@import 'views/blocks/two_columns_information';
- 
-
 //block post
 @import 'views/blocks/hero';
 @import 'views/blocks/tabs_services';
 @import 'views/blocks/logo_list';
+@import 'views/blocks/counter_square';
+@import 'views/blocks/contact_us_prefooter';
 // responsive
 @import 'layout/responsive';
 @import 'layout/print';

@@ -55,6 +55,71 @@ function ther_init_blocks() {
             ),
         ));
 
+        acf_register_block_type(array(
+            'name'              => 'dev/counter_box',
+            'title'             => __('Counter Square List'),
+            'description'       => __('counter square list.'),
+            'render_template'   => 'template-parts/blocks/counter_box.php',
+            'category'          => 'dev-ca-2',
+            'icon'              => 'format-aside',
+            'keywords'          => array( 'counter', 'square', 'list' ),
+            'mode'            => 'preview',
+            'render_callback' => 'template_acf_block_render_callback',
+            'align'           => 'full',
+            'supports'        => array(
+                'align'        => array('full'),
+                'align'        => true,
+            ),
+        ));
+        acf_register_block_type(array(
+            'name'              => 'dev/contact_us_prefooter',
+            'title'             => __('Contact Us'),
+            'description'       => __('Contact Us.'),
+            'render_template'   => 'template-parts/blocks/contact_us_prefooter.php',
+            'category'          => 'dev-ca-2',
+            'icon'              => 'format-aside',
+            'keywords'          => array( 'Contact', 'Us' ),
+            'mode'            => 'preview',
+            'render_callback' => 'template_acf_block_render_callback',
+            'align'           => 'full',
+            'supports'        => array(
+                'align'        => array('full'),
+                'align'        => true,
+            ),
+        ));
+        acf_register_block_type(array(
+            'name'              => 'dev/separated-element',
+            'title'             => __('Separated Element'),
+            'description'       => __('Separated Element.'),
+            'render_template'   => 'template-parts/blocks/separated-element.php',
+            'category'          => 'dev-ca-1',
+            'icon'              => 'format-aside',
+            'keywords'          => array( 'separated','element' ),
+            'mode'            => 'preview',
+            'render_callback' => 'template_acf_block_render_callback',
+            'align'           => 'full',
+            'supports'        => array(
+                'align'        => array('full'),
+                'align'        => true,
+            ),
+        ));
+/*         acf_register_block_type(array(
+            'name'              => 'dev/bg_row-image',
+            'title'             => __('Conta'),
+            'description'       => __('Contact Us.'),
+            'render_template'   => 'template-parts/blocks/bg_row-image.php',
+            'category'          => 'dev-ca-2',
+            'icon'              => 'format-aside',
+            'keywords'          => array( 'Contact', 'Us' ),
+            'mode'            => 'preview',
+            'render_callback' => 'template_acf_block_render_callback',
+            'align'           => 'full',
+            'supports'        => array(
+                'align'        => array('full'),
+                'align'        => true,
+            ),
+        ));
+         */
         
     }
 }

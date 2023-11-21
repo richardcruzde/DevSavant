@@ -16,10 +16,34 @@
             margin: 0 auto;
         }
     }
+    .show-dekstop-sl{
+        display: block;
+    }
+    .show-mobile-sl{
+        display: none;
+    }
+    @media(max-width: $small-tablet){
+        padding: 40px 0 10px;
+        .show-dekstop-sl{
+            display: none;
+        }
+        .show-mobile-sl{
+            display: block;
+        }
+        .figure-slider-logo{
+            margin: 0 auto 33px;
+           
+        }
+    }
 }
 
 .slider-logo{
     margin: 0 -10px;
+    &:not(.slick-initialized){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .slick-track{
         display: flex;
         align-items: center;
@@ -28,4 +52,25 @@
             margin: 0 10px;
         }
     }
+    @media(max-width: $small-tablet){
+        .slick-track{
+            display: block;
+            
+        }
+    }
+}
+ 
+
+.acf-block-preview{
+    .logo_list{
+        .slider-logo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            >div{
+                padding: 0 15px;
+            }
+        }
+    }
+
 }

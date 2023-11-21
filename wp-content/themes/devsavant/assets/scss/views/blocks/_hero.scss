@@ -48,6 +48,18 @@
         .img-person-col{
             max-width: 52%;
         }
-
+    }
+    @media(max-width: $small-tablet){
+        padding: 43px 0 0;
+        height: auto;
+        min-height: auto;
+        .inner-detail-hero{
+            min-width: 119px;
+        }
+        .img-person-col{
+            max-width: 358px;
+            margin: 64px 0 0 auto;
+            position: relative;
+        }
     }
  }

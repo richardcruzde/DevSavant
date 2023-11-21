@@ -35,7 +35,7 @@ require_once get_stylesheet_directory() . '/inc/hook.php';
  
 
 // Layout
-//require_once get_stylesheet_directory() . '/template-parts/header.php';
+require_once get_stylesheet_directory() . '/template-parts/header.php';
 require_once get_stylesheet_directory() . '/template-parts/footer.php';
 
 

@@ -31,7 +31,11 @@
     line-height: 1.174em;
     letter-spacing: -1px;
     margin: 0 0 20px;
-
+    @media(max-width: $small-tablet){
+        font-size: 45px;
+        line-height: 1.2em;
+        letter-spacing: -0.5px;
+    }
 }
 
 @mixin h2 {
@@ -40,8 +44,11 @@
     line-height: 1.178571em;
     letter-spacing: 0.25px;
     margin: 0 0 18px;
-
-
+    @media(max-width: $small-tablet){
+        font-size: 45px;
+        line-height: 1.2em;
+        letter-spacing: -0.5px;
+    }
 }
 
 @mixin h3 {

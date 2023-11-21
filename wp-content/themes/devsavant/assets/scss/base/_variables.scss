@@ -8,32 +8,32 @@ $font-size: 14px;
 $primary: #FFFFFF;
 $secondary: #2C251E;
 $black: #1f1f1f;
+$black_light: #1f1f1f;
 $color_green: #CEE3DA;
-$color_green-2: #68AD79;
-$color_green-3: #558777;
-
+$color_green-lettuce: #68AD79;
+$color_green-light: #558777;
+$color_green-black: #284741;
 
 $btn_primary: #68AD79;
 //$custom-control-indicator-size: 1rem;
 // ----------------------------------------------------------------------
 // Font Families   
 // ----------------------------------------------------------------------
-
+//body
 $font-family: 'Raleway', arial, helvetica, sans-serif;
+//title h1,h2,h3.h4.h5 .h6
 $font-heading: 'Raleway', Helvetica, Arial, sans-serif;
- 
  
 // ----------------------------------------------------------------------
 // Variables
 // ----------------------------------------------------------------------
+//for min width
 $grid-breakpoints: ( xs: 0, sm: 581px, md: 769px, lg: 1025px, xl: 1200px);
 
+//form max width
 $small-phone: 420px;
 $phone: 580px;
 $small-tablet: 768px;
-$tablet: 992px;
+$tablet: 991px;
 $desktop: 1024px;
 $desktop-xl: 1440px;
-// ----------------------------------------------------------------------
-// Headings
-// ----------------------------------------------------------------------

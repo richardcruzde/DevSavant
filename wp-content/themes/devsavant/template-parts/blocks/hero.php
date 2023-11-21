@@ -14,8 +14,10 @@ $base_url = get_stylesheet_directory_uri();
     $background_image = !empty($hero_block['background_image']) ? 'background-image: url('.$hero_block['background_image'].');' : '';
     $image_hero = !empty($hero_block['image_hero']) ? $hero_block['image_hero'] : [];
     $curved_image = !empty($hero_block['curved_image']) ? 'background-image: url('.$hero_block['curved_image'].');'  : '';
+    $curved_image_mobile = !empty($hero_block['curved_image_mobile']) ? 'background-image: url('.$hero_block['curved_image_mobile'].')!important;'  : '';
+    
     ?>
-    <section id="<?php echo $id;  ?>" class="hero-page <?php echo $align_class; ?>" style="<?php echo $background_image; ?>">
+    <section id="<?php echo $id;  ?>" class="hero-page full-row-dev <?php echo $align_class; ?>" style="<?php echo $background_image; ?>">
         <div class="curve-img-hero" style="<?php echo $curved_image; ?>">
         </div>
         
@@ -36,4 +38,11 @@ $base_url = get_stylesheet_directory_uri();
             </div>
         <?php endif; ?>
     </section>
+    <style>
+        @media(max-width: 768px){
+            .hero-page#<?php echo $id;  ?>{
+                <?php echo $curved_image_mobile; ?>
+            }
+        }
+    </style>
 <?php endif; ?>

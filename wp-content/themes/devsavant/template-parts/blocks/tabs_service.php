@@ -14,10 +14,10 @@ $base_url = get_stylesheet_directory_uri();
 
  
     ?>
-    <section id="<?php echo $id;  ?>" class="tabs-services <?php echo $align_class; ?>" style="<?php echo $background_image; ?>" >
+    <section id="<?php echo $id;  ?>" class="tabs-services full-row-dev <?php echo $align_class; ?>" style="<?php echo $background_image; ?>" >
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 order-mobile-tb">
                     <div class="list-tabs-content">
                         <?php 
                         $count_item = 0;   
@@ -34,8 +34,14 @@ $base_url = get_stylesheet_directory_uri();
                                     <div class="content-right">
                                         <?php if($name_content_box != ''): ?>
                                             <div class="icon-row-title">
-                                                <i class="icon-99"></i> 
-                                                <h3><?php echo $name_content_box; ?></h3>
+
+                                                <h3>
+                                                    <?php if(!empty($button_box)): ?>
+                                                        <a href="<?php echo $button_box['url']; ?>" target="<?php echo $button_box['target']; ?>"  title="<?php echo $button_box['title']; ?>" ><?php echo $name_content_box; ?></a>
+                                                    <?php else: ?> 
+                                                        <?php echo $name_content_box; ?>
+                                                    <?php endif; ?>
+                                                </h3>
                                             </div>
                                         <?php endif; ?>
                                         <?php echo $content_tabs_box;  ?>
@@ -50,7 +56,7 @@ $base_url = get_stylesheet_directory_uri();
                             <?php endforeach; ?>
                     </div>    
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-mobile-ta">
                     <div class="inner-list-tabs">
                         <?php if($title_block != ''): ?>
                             <h2><?php echo $title_block; ?></h2>
@@ -69,7 +75,6 @@ $base_url = get_stylesheet_directory_uri();
                                 ?>
                                     <div class="li-item-data click-event-rt <?php echo $class_tabs; ?>" item-data-id="<?php echo $count_item;  ?>">
                                         <div class="icon-row-title">
-                                            <i class="icon-99"></i> 
                                             <h3><?php echo $title_box;  ?></h3>
                                         </div>
                                         <div class="link">

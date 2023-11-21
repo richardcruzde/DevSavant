@@ -1,0 +1,73 @@
+.counter-square{
+    padding: 76px 0;
+    @media(max-width: $small-tablet){
+     padding: 39px 0;
+    }
+}
+
+.main-title{
+    text-align: center;
+    margin: 0 auto 30px;
+}
+.list-counter-data{
+    .row{
+        >div{
+            margin-bottom: 30px;
+        }
+    }
+}
+.box-counter-inf{
+    
+    .inner-scuare-counter{
+        display: flex;
+        padding: 24px;
+        border-radius: 32px;
+        background-image: url(../images/servicios-card.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+        .col-number-information{
+            margin-right: 30px;
+            display: flex;
+            span{
+               display: inline-block;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 1.175em;
+                letter-spacing: 0.25px;
+                text-align: left;
+
+            }
+        }
+        .col-detail-information{
+            p{
+                margin-bottom: 10px;
+            }
+            >*:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media(max-width: $small-tablet){
+        .inner-scuare-counter{
+            padding: 28.5px 24px;
+            .col-detail-information{
+                p{
+                    font-size: 19px;
+                    line-height: 1.1855em;
+                }
+            }
+            .col-number-information{
+                span{
+                    font-size: 24px;
+                    line-height: 1.16666;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
